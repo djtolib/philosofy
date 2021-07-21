@@ -17,8 +17,8 @@ void interview(teams team){
 
 int main() {
   thread interview_one{interview,   teams::mobile},
-      interview_two{interview,   teams::kos},
-      interview_three{interview, teams::sdk};
+         interview_two{interview,   teams::kos},
+         interview_three{interview, teams::sdk};
 
   interview_one.  join();
   interview_two.  join();
