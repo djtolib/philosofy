@@ -7,18 +7,18 @@
 using namespace std;
 
 enum class teams{
-  mobile,
-  sdk,
-  kos
+  MOBILE,
+  SDK,
+  KOS
 };
 void interview(teams team){
   this_thread::sleep_for(chrono::minutes{90});
 }
 
 int main() {
-  thread interview_one{interview,   teams::mobile},
-         interview_two{interview,   teams::kos},
-         interview_three{interview, teams::sdk};
+  thread interview_one{interview,   teams::MOBILE},
+         interview_two{interview,   teams::KOS},
+         interview_three{interview, teams::SDK};
 
   interview_one.  join();
   interview_two.  join();
