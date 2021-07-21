@@ -12,7 +12,7 @@ enum class teams{
   kos
 };
 void interview(teams team){
-  this_thread::sleep_for(chrono::minutes {90});
+  this_thread::sleep_for(chrono::minutes{90});
 }
 
 int main() {
