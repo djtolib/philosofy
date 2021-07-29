@@ -1,15 +1,15 @@
 #include <iostream>
 #define HUMAN
 
-bool godExists = true;
+bool god_exists = true;
 int MAX_AGE = 100;
 
 int main() {
     int years = 0;
     bool life = true;
-    bool godExists = false;
+    bool god_exists = false;
     while (life) {
-        if (!godExists) {
+        if (!god_exists) {
             std::cout << "Living, living and living!";
         }
         years++;
@@ -18,5 +18,5 @@ int main() {
             break;
         #endif
     }
-    std::cout << std::boolalpha << std::endl << godExists;
+    std::cout << std::boolalpha << std::endl << god_exists;
 }
