@@ -7,8 +7,8 @@ int MAX_AGE = 100;
 int main() {
     int years = 0;
     bool life = true;
+    bool godExists = false;
     while (life) {
-        bool godExists = false;
         if (!godExists) {
             std::cout << "Living, living and living!";
         }
